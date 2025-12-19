@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <header
-      className={`overflow-hidden fixed top-0 w-full z-50  transition-all duration-300 border-b border-primary/5 ease-out ${
+      className={`fixed top-0 w-full z-50  transition-all duration-300 border-b border-primary/5 ease-out ${
         isScrolled
           ? "bg-dark/80 backdrop-blur-xl border-b  border-white/10 shadow-lg"
           : "bg-transparent"
@@ -157,7 +157,7 @@ export default function Header() {
           animate={{ x: isMobileMenuOpen ? "0%" : "100%" }}
           transition={{ type: "spring", damping: 25, stiffness: 200 }}
           style={{height:"100vh"}}
-          className="md:hidden fixed top-0 right-0 w-72 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-white/10 z-[90] mobile-menu-panel pointer-events-auto"
+          className="md:hidden fixed top-0 right-0 w-72 max-w-[85vw] bg-black border-l border-white/10 z-[90] mobile-menu-panel pointer-events-auto"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col h-full">
