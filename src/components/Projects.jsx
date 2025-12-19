@@ -7,6 +7,10 @@ import TiltedCard from "../util/TiltedCard";
 import "swiper/css";
 import saluhallDesktop from "/src/assets/img/project1main.png";
 import saluhallMobile from "/src/assets/img/project1mob.png";
+import wayfareDesktop from "/src/assets/img/project2main.png";
+import wayfareMobile from "/src/assets/img/project2mob.png";
+import vinateriaDesktop from "/src/assets/img/project3main.png";
+import vinateriaMobile from "/src/assets/img/project3mob.png";
 const projects = [
   {
     title: "S@luhall — SaaS Food Hall Platform",
@@ -21,7 +25,7 @@ const projects = [
     image: saluhallDesktop,
     desktop: saluhallDesktop,
     tech: ["Web", "Resposive Mobile"],
-    link: "#",
+    link: "https://www.saluhallmarket.com/",
     mobile: saluhallMobile,
   },
   {
@@ -34,11 +38,11 @@ const projects = [
     ],
     description:
       "A modern web application focused on clean design, responsive layouts, and smooth user experiences across devices.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
-    desktop: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    image: wayfareDesktop,
+    desktop: wayfareDesktop,
     tech: ["Web", "Resposive Mobile"],
-    link: "#",
-    mobile: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    link: "https://www.wayfaretavern.com/",
+    mobile: wayfareMobile,
   },
   {
     title: "Vinateria",
@@ -50,11 +54,11 @@ const projects = [
 
     description:
       "A data-driven SaaS platform featuring admin dashboards and business-focused workflows built for scalability and performance.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    desktop: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: vinateriaDesktop,
+    desktop: vinateriaDesktop,
     tech: ["Web", "Resposive Mobile"],
-    link: "#",
-    mobile: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    link: "https://www.vinaterianyc.com/",
+    mobile: vinateriaMobile,
   },
 ];
 

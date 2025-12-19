@@ -50,10 +50,10 @@ export default function Skill() {
   const skills = [
     { name: "React", icon: "https://cdn.simpleicons.org/react/61DAFB" },
     { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
-    { name: "Wordpress", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
-    { name: "Shopify", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
+    { name: "Wordpress", icon: "https://cdn.simpleicons.org/wordpress" },
+    { name: "Shopify", icon: "https://cdn.simpleicons.org/shopify" },
     { name: "HTML", icon: "https://cdn.simpleicons.org/html5/E34F26" },
-    { name: "CSS", icon: "https://cdn.simpleicons.org/css3/1572B6" },
+    { name: "CSS", icon: "https://cdn.simpleicons.org/css/1572B6" },
     { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
     { name: "Android", icon: "https://cdn.simpleicons.org/android/3DDC84" },
     { name: "Figma", icon: "https://cdn.simpleicons.org/figma/F24E1E" },
@@ -117,10 +117,10 @@ export default function Skill() {
                      hover:border-primary transition"
         >
           <div className="grid md:grid-cols-3 grid-cols-2 md:gap-6 gap-4 p-6">
-            <VerticalMarquee items={skills.slice(0, 4)} direction="up" />
-            <VerticalMarquee items={skills.slice(3, 7)} direction="down" />
+            <VerticalMarquee items={isMobileMenuOpen ? skills.slice(0, 4) : skills.slice(0, 5)} direction="up" />
+            <VerticalMarquee items={isMobileMenuOpen ? skills.slice(3, 7) : skills.slice(6, 11)} direction="down" />
             {!isMobileMenuOpen && (
-              <VerticalMarquee items={skills.slice(6, 10)} direction="up" />
+              <VerticalMarquee items={skills.slice(6, 11)} direction="up" />
             )}
           </div>
         </motion.div>
